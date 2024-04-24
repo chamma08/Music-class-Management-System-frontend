@@ -1,0 +1,38 @@
+.preloader {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mern-estate-aba05.appspot.com/o/music-background-with-phone-with-music-icon-column-modern-technology-concept-listening-music.jpg?alt=media&token=0a3384a9-220c-4057-9fbd-465a73e590e8");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden !important;
+
+    .texts-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: 60px;
+        width: 480px;
+        font-size: 30px;
+        overflow: hidden;
+        font-weight: 800;
+        opacity: 0;
+        color: white;
+
+        @include media("<=phone") {
+            font-size: 17px;
+            width: 240px;
+        }
+    }
+}
